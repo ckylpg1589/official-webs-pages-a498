@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 · 快速识别指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #1c1e21;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #0b1a2e 0%, #142c44 100%);
+            color: #e4edf7;
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: #f4f6f9;
+            border-radius: 30px 30px 0 0;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 680px;
+            margin: 0.5rem auto 0;
+            color: #becddc;
+            font-weight: 300;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1.8rem 1.5rem 4rem;
+        }
+
+        /* 卡片式区块 */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 1.8rem 2rem;
+            flex: 1 1 280px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.15s ease, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #0b1a2e;
+            letter-spacing: 0.3px;
+        }
+
+        .card p {
+            color: #3e4a5a;
+            font-size: 0.95rem;
+        }
+
+        .card .accent-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #c44536;
+            background: #fceeea;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            margin-bottom: 0.6rem;
+        }
+
+        .highlight-link {
+            color: #c44536;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(196, 69, 54, 0.25);
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .highlight-link:hover {
+            color: #9b2f1f;
+            border-bottom-color: #9b2f1f;
+        }
+
+        .separator {
+            margin: 2.5rem 0 1.8rem;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d0d7e0, transparent);
+        }
+
+        .faq-block {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.6rem 1.8rem 1.8rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            margin: 2.2rem 0 1.5rem;
+        }
+
+        .faq-block h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #0b1a2e;
+        }
+
+        .faq-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eaeef5;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 500;
+            color: #1f2a3a;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-answer {
+            color: #4f5b69;
+            font-size: 0.9rem;
+        }
+
+        .footnote {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: #6b788a;
+            border-top: 1px solid #dce2eb;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .card-grid {
+                gap: 1.2rem;
+            }
+            .card {
+                padding: 1.4rem;
+            }
+            .hero {
+                padding: 2.5rem 1rem 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>世界杯 · 一站识别</h1>
+        <p>快速了解这个网站的定位、核心用途与适用场景，避免信息混淆。</p>
+    </header>
+
+    <main class="content">
+        <!-- 摘要卡片区 -->
+        <div class="card-grid">
+            <div class="card">
+                <span class="accent-tag">摘要</span>
+                <h2>这是什么网站？</h2>
+                <p>一个以 <a href="https://official-webs-shijiebei.com" class="highlight-link">世界杯</a> 为核心的资讯与整合平台。内容围绕赛事动态、球队背景、历史数据与观赛信息展开，帮助用户快速找到有条理的足球世界杯相关内容。</p>
+            </div>
+            <div class="card">
+                <span class="accent-tag">亮点</span>
+                <h2>信息结构清晰</h2>
+                <p>赛事日历、分组数据、往届记录、球队档案等模块均有独立分区。不堆砌无关信息，页面层级直观，适合查阅与对比。</p>
+            </div>
+            <div class="card">
+                <span class="accent-tag">使用建议</span>
+                <h2>适合这样用</h2>
+                <p>赛前查阅赛程与对阵，赛中快速核对分组与积分，赛后回顾历史战绩。如果你需要了解当届世界杯的完整框架，这个站点提供了一份可靠的索引。</p>
+            </div>
+        </div>
+
+        <hr class="separator" />
+
+        <!-- 更具体的场景说明块 -->
+        <div style="background: #ffffff; border-radius: 20px; padding: 1.6rem 1.8rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+            <h2 style="font-size: 1.2rem; font-weight: 600; color: #0b1a2e; margin-bottom: 0.75rem;">网站用途 · 三句话说明</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #eff2f7; display: flex; gap: 0.5rem;">
+                    <span style="color: #c44536; font-weight: 500; min-width: 1.6rem;">①</span>
+                    <span>为关注世界杯的用户提供聚合信息：赛程、队伍、场馆、历史数据，以结构化的方式呈现。</span>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #eff2f7; display: flex; gap: 0.5rem;">
+                    <span style="color: #c44536; font-weight: 500; min-width: 1.6rem;">②</span>
+                    <span>内容经过筛选与分类，不混杂广告或无关链接，更偏向工具型参考页面。</span>
+                </li>
+                <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">
+                    <span style="color: #c44536; font-weight: 500; min-width: 1.6rem;">③</span>
+                    <span>适合赛期集中使用，也适合对历届世界杯感兴趣的新老球迷快速检索。</span>
+                </li>
+            </ul>
+            <p style="margin-top: 1.2rem; font-size: 0.9rem; color: #4a5b6e;">如果你正在找一届赛事的基础信息框架，可以试试从 <a href="https://official-webs-shijiebei.com" class="highlight-link">世界杯</a> 这个网站开始浏览。</p>
+        </div>
+
+        <!-- FAQ 摘要（克制描述） -->
+        <div class="faq-block">
+            <h3>常见疑问 · 简答</h3>
+            <div class="faq-item">
+                <div class="faq-question">这个网站是官方世界杯网站吗？</div>
+                <div class="faq-answer">并非 FIFA 或赛事主办方的官方站点。它是一个由第三方整理的资讯类网站，以世界杯为主题，内容基于公开可查的赛事数据与信息。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">信息更新及时吗？</div>
+                <div class="faq-answer">页面会在主要赛事周期（预选赛、正赛前后）保持更新。非赛期部分历史数据仍可查阅，实时比分或突发新闻可能不是它的强项。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">我可以直接引用网站上的数据吗？</div>
+                <div class="faq-answer">建议核对多方来源。本站提供的内容可作为参考，但重大决策或正式引用前请与官方数据交叉验证。</div>
+            </div>
+        </div>
+
+        <!-- 可信但克制的访问说明 -->
+        <div style="background-color: #ffffff; border-radius: 16px; padding: 1.4rem 1.8rem; margin-top: 1.8rem; border-left: 4px solid #c44536;">
+            <p style="font-size: 0.95rem; color: #2f3a48; margin: 0;">
+                <strong style="color: #0b1a2e;">关于访问：</strong>
+                网站采用常规 HTTP/HTTPS 访问，页面以中文为主，无需注册或下载。浏览时请注意网络环境安全，本站不会主动索取个人信息。如果你对赛程、分组或球队档案有需求，可直接访问 <a href="https://official-webs-shijiebei.com" class="highlight-link">世界杯</a> 查看当前内容。
+            </p>
+        </div>
+
+        <div class="footnote">
+            本页面为简要介绍页 · 内容仅作参考 · 2025
+        </div>
+    </main>
+</body>
+</html>
